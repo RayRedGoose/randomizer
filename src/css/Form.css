@@ -1,0 +1,101 @@
+.camp-list-wrapper {
+  width: fit-content;
+  margin: 15% auto;
+  background-color: #ffe3c9;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.camp-list-wrapper h2 {
+  color: rgb(73, 24, 5);
+  margin: 0;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgb(73, 24, 5);
+  text-transform: uppercase;
+}
+
+.camp-list-wrapper ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(85px, 1fr));
+  grid-gap: 0.5rem;
+  padding: 0;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(73, 24, 5);
+}
+
+.control > button {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1rem;
+}
+
+.control > button > img {
+  width: 14px;
+  height: 14px;
+  margin-right: 0.25rem;
+}
+
+.control > button > p {
+  margin: 0;
+}
+
+.camp-form {
+  width: 100%;
+  display: flex;
+}
+
+.camp-form input[type="text"] {
+  width: 100%;
+}
+
+.camp-form input[type="submit"] {
+  margin-left: 8px;
+  width: min-content;
+}
+
+.hiker-block {
+  position: relative;
+  list-style: none;
+  padding: 10px;
+}
+
+.hiker-block p {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.hiker-block img {
+  width: 56px;
+}
+
+.hiker-block button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ffe3c9;
+  border: none;
+  font-size: 24px;
+  color: rgb(255, 85, 0);
+  border-radius: 1rem;
+  font-weight: 700;
+  padding: 0;
+}
+
+.secondary-button {
+  border: 1px solid rgb(107, 41, 15);
+  border-radius: 0.25rem;
+  background-color: #fff;
+}
+
+.primary-button {
+  background-color: #fa8e00;
+  border: none;
+  text-shadow: 0 0 4px #fff;
+}

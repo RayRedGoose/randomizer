@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #010101;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: 0.15em;
+  font-family: "Raleway Dots", cursive;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #00ffc3;
+  text-shadow: 0 0 4px #00ffc3;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+input[type="submit"],
+button {
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  transform: scale(1.1);
+}
+
+input[type="submit"]:active,
+button:active {
+  transform: scale(0.9);
+}
