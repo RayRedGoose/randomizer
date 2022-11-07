@@ -4,14 +4,16 @@ import abducted from "../assets/abducted.png";
 export const ShipControl = ({
   name,
   isDisabled,
+  isOnStart,
   onClick,
 }: {
   name: string;
   isDisabled?: boolean;
+  isOnStart?: boolean;
   onClick: () => void;
 }) => {
   return (
-    <div className="controls">
+    <div className={`controls ${isOnStart ? "animated" : ""}`}>
       {/* <div className="gui">
         <div className="ui-border-v2 t">
           <svg viewBox="0 0 620 30">

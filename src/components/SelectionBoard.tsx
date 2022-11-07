@@ -13,6 +13,8 @@ export const SelectionBoard = ({ victims }: { victims: string[] }) => {
   const [leftVictims, setLeftVictims] = React.useState<string[]>(victims);
   const [currentVictim, setCurrentVictim] = React.useState<string>("");
 
+  const isOnStart = leftVictims.length === victims.length;
+
   const handleSelectVictim = () => {
     const victimName = getRandomName(leftVictims);
     setIsKidnapping(true);
@@ -34,11 +36,12 @@ export const SelectionBoard = ({ victims }: { victims: string[] }) => {
           </div>
         )}
       </main>
-      {!isKidnapping && leftVictims.length && (
+      {!isKidnapping && !!leftVictims.length && (
         <ShipControl
           name={currentVictim}
           isDisabled={isKidnapping || !leftVictims.length}
           onClick={handleSelectVictim}
+          isOnStart={isOnStart}
         />
       )}
       {/* <footer className="ui panel">
