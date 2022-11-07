@@ -36,7 +36,7 @@ export const SelectionBoard = ({ victims }: { victims: string[] }) => {
           </div>
         )}
       </main>
-      {!isKidnapping && !!leftVictims.length && (
+      {!isKidnapping && (
         <ShipControl
           name={currentVictim}
           isDisabled={isKidnapping || !leftVictims.length}
